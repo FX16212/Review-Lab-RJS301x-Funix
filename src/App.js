@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Nav from './Nav/Nav';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home/Home';
+import ListUser from './User/ListUser';
 function App() {
 	return (
 		<Router>
@@ -16,7 +17,7 @@ function App() {
 					<Route path='/' exact element={<Home />} />
 					{/* <Route path='/about' exact element={<About />} /> */}
 					<Route path='/todo' element={<ListTodo />} />
-					{/* <Route path='/contact' element={<Contact />} /> */}
+					<Route path='/user' element={<ListUser />} />
 				</Routes>
 			</div>
 		</Router>

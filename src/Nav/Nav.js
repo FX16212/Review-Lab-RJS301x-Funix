@@ -1,6 +1,6 @@
 import React from 'react';
 import './Nav.css';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 class Nav extends React.Component {
 	state = {};
 	render() {
@@ -29,8 +29,8 @@ class Nav extends React.Component {
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to='contact.html' activeClassName='active'>
-								contact
+							<NavLink to='/user' activeClassName='active'>
+								user
 							</NavLink>
 						</li>
 					</ul>
