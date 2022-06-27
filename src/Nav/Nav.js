@@ -1,6 +1,6 @@
 import React from 'react';
 import './Nav.css';
-
+import { Link, NavLink } from 'react-router-dom';
 class Nav extends React.Component {
 	state = {};
 	render() {
@@ -14,16 +14,24 @@ class Nav extends React.Component {
 					</div>
 					<ul className='links'>
 						<li>
-							<a href='/home'>home</a>
+							<NavLink to='/' exact={true} activeClassName='active'>
+								home
+							</NavLink>
 						</li>
 						<li>
-							<a href='/about'>about</a>
+							<NavLink to='/about' activeClassName='active'>
+								about
+							</NavLink>
 						</li>
 						<li>
-							<a href='/todo'>todo</a>
+							<NavLink to='/todo' activeClassName='active'>
+								todo
+							</NavLink>
 						</li>
 						<li>
-							<a href='contact.html'>contact</a>
+							<NavLink to='contact.html' activeClassName='active'>
+								contact
+							</NavLink>
 						</li>
 					</ul>
 					<ul className='social-icons'>

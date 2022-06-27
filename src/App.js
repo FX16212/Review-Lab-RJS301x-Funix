@@ -13,9 +13,10 @@ function App() {
 				<Nav />
 				<ToastContainer />
 				<Routes>
+					<Route path='/' exact element={<Home />} />
+					{/* <Route path='/about' exact element={<About />} /> */}
 					<Route path='/todo' element={<ListTodo />} />
-					<Route path='/home' element={<Home />} />
-					<Route path='/' element={<Home />} />
+					{/* <Route path='/contact' element={<Contact />} /> */}
 				</Routes>
 			</div>
 		</Router>
