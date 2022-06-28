@@ -22,14 +22,15 @@ class Nav extends React.Component {
 						<li>
 							<NavLink to='/'>home</NavLink>
 						</li>
-						<li>
-							<NavLink to='/about'>about</NavLink>
-						</li>
+
 						<li>
 							<NavLink to='/todo'>todo</NavLink>
 						</li>
 						<li>
 							<NavLink to='/user'>user</NavLink>
+						</li>
+						<li>
+							<NavLink to='/about'>about</NavLink>
 						</li>
 					</ul>
 					<ul className='social-icons'>

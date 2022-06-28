@@ -9,7 +9,6 @@ class ListUser extends React.Component {
 	};
 	async componentDidMount() {
 		const res = await axios.get('https://reqres.in/api/users?page=1');
-
 		this.setState({
 			listUser: res && res.data && res.data.data ? res.data.data : [],
 		});
@@ -18,6 +17,7 @@ class ListUser extends React.Component {
 		let { listUser } = this.state;
 		return (
 			<div className='container'>
+				<h1 className='fw-light text-white'>Meet the Team</h1>
 				<div className='row'>
 					{listUser &&
 						listUser.length > 0 &&

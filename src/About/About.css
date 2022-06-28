@@ -1,0 +1,31 @@
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+	background-color: black;
+}
+
+/* spacing on all sections */
+#about,
+#services,
+#portfolio,
+#contact {
+	margin-top: 4rem;
+	padding-top: 4rem;
+}
+#contact {
+	padding-bottom: 4rem;
+}
+/* about section image css */
+.imageAboutPage {
+	width: 100%;
+}
+
+/* social media icons styling */
+.social-icons {
+	cursor: pointer;
+}
+
+/* footer styling */
+#footer {
+	background-color: #808080;
+	text-align: center;
+}
