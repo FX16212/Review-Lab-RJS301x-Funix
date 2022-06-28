@@ -2,36 +2,34 @@ import React from 'react';
 import './Nav.css';
 import { NavLink } from 'react-router-dom';
 class Nav extends React.Component {
-	state = {};
+	state = {
+		toggle: false,
+	};
+	toggleClass() {
+		const currentState = this.state.toggle;
+		this.setState({ toggle: !currentState });
+	}
 	render() {
 		return (
 			<nav>
 				<div className='nav-center'>
 					<div className='nav-header'>
-						<button className='nav-toggle'>
+						<button className='nav-toggle' onClick={() => this.toggleClass()}>
 							<i className='fas fa-bars'></i>
 						</button>
 					</div>
-					<ul className='links'>
+					<ul className={this.state.toggle ? 'show-links' : 'links'}>
 						<li>
-							<NavLink to='/' exact={true} activeClassName='active'>
-								home
-							</NavLink>
+							<NavLink to='/'>home</NavLink>
 						</li>
 						<li>
-							<NavLink to='/about' activeClassName='active'>
-								about
-							</NavLink>
+							<NavLink to='/about'>about</NavLink>
 						</li>
 						<li>
-							<NavLink to='/todo' activeClassName='active'>
-								todo
-							</NavLink>
+							<NavLink to='/todo'>todo</NavLink>
 						</li>
 						<li>
-							<NavLink to='/user' activeClassName='active'>
-								user
-							</NavLink>
+							<NavLink to='/user'>user</NavLink>
 						</li>
 					</ul>
 					<ul className='social-icons'>

@@ -1,0 +1,15 @@
+body {
+	font-family: 'Ropa Sans', sans-serif;
+	background: #e1e1e1;
+}
+
+.profile-box {
+	padding: 10px;
+}
+.profile-box button {
+	font-size: 12px;
+}
+.profile-box p {
+	font-size: 13px;
+	line-height: 1;
+}

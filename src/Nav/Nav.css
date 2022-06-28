@@ -204,7 +204,10 @@ nav {
 	transition: var(--transition);
 }
 .show-links {
+	padding-left: 20px;
 	height: 10rem;
+	overflow: hidden;
+	transition: var(--transition);
 }
 @media screen and (min-width: 800px) {
 	.nav-center {

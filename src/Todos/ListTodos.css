@@ -11,7 +11,7 @@
 	flex-direction: column;
 	align-items: center;
 	padding-top: 50px;
-	background-color: #e1e3ea;
+	/* background-color: #e1e3ea; */
 	height: 100vh;
 	font-family: sans-serif;
 }
