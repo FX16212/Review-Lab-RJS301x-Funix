@@ -24,18 +24,17 @@ class AddTodo extends React.Component {
 	render() {
 		let { title } = this.state;
 		return (
-			<div className='add-todo'>
+			<div className="add-todo">
 				<input
-					type='text'
-					placeholder='Add new task...'
+					type="text"
+					placeholder="Add new user..."
 					value={title}
 					onChange={(event) => this.setState({ title: event.target.value })}
 				/>
 				<button
-					className='btn btn-primary add'
-					type='button'
-					onClick={() => this.handleAddTodo()}
-				>
+					className="btn btn-primary add"
+					type="button"
+					onClick={() => this.handleAddTodo()}>
 					Add
 				</button>
 			</div>

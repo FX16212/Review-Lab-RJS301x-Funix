@@ -8,9 +8,9 @@ import { toast } from 'react-toastify';
 class ListTodo extends React.Component {
 	state = {
 		listTodos: [
-			{ id: 'todo1', title: 'Doing homework' },
-			{ id: 'todo2', title: 'Making videos' },
-			{ id: 'todo3', title: 'Fixing bugs' },
+			{ id: 'todo1', title: 'User 1' },
+			{ id: 'todo2', title: 'User 2' },
+			{ id: 'todo3', title: 'User 3' },
 		],
 		editTodo: {},
 	};
@@ -59,16 +59,16 @@ class ListTodo extends React.Component {
 		let { listTodos, editTodo } = this.state;
 		let isEmptyObj = Object.keys(editTodo).length === 0;
 		return (
-			<div className='container'>
-				<div className='app'>
-					<h1>TO DO LIST</h1>
+			<div className="container">
+				<div className="app">
+					<h1>USER LIST</h1>
 					<AddTodo addNewTodo={this.addNewTodo} />
-					<div className='list-todo-context'>
+					<div className="list-todo-context">
 						{listTodos &&
 							listTodos.length > 0 &&
 							listTodos.map((item, index) => {
 								return (
-									<div className='todo-child' key={item.id}>
+									<div className="todo-child" key={item.id}>
 										{isEmptyObj === true ? (
 											<span>
 												{index + 1} - {item.title}
@@ -93,17 +93,15 @@ class ListTodo extends React.Component {
 											</>
 										)}
 										<button
-											className='btn btn-danger delete'
-											type='button'
-											onClick={() => this.handleDeleteTodo(item)}
-										>
+											className="btn btn-danger delete"
+											type="button"
+											onClick={() => this.handleDeleteTodo(item)}>
 											Delete
 										</button>
 										<button
-											className='btn btn-warning edit'
-											type='button'
-											onClick={() => this.handleEditTodo(item)}
-										>
+											className="btn btn-warning edit"
+											type="button"
+											onClick={() => this.handleEditTodo(item)}>
 											{isEmptyObj === false && editTodo.id === item.id
 												? 'Save'
 												: 'Edit'}
